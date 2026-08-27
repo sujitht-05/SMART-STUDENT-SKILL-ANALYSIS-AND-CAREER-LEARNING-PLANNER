@@ -56,20 +56,28 @@ The system provides a step-by-step roadmap showing the skills and learning stage
 🏗️ System Workflow
 
 Student Profile
+
       ↓
 Skill & Interest Assessment
+
       ↓
 Current Skill Analysis
+
       ↓
 Career Recommendation
+
       ↓
 Skill Gap Identification
+
       ↓
 Personalized Learning Plan
+
       ↓
 Course / Resource Recommendations
+
       ↓
 Progress Tracking
+
       ↓
 Career Readiness
 
@@ -113,14 +121,19 @@ Possible approaches include:
 A simple recommendation flow can be represented as:
 
 Student Skills + Interests
+
           ↓
 Feature Extraction
+
           ↓
 Skill/Career Matching
+
           ↓
 Career Recommendation
+
           ↓
 Skill Gap Detection
+
           ↓
 Learning Resource Recommendation
 
