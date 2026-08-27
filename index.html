@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Student Skill Analysis and Career Learning Planner - Analyze skill gaps, view visual radar analytics, generate personalized learning roadmaps, and interact with an AI skill advisor.">
+  <title>Smart Student Skill Analysis & Career Learning Planner</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div>
+        <span>Skill<span class="gradient-text">Planner</span></span>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <button class="active" data-tab="dashboard">
+          <i class="fa-solid fa-chart-pie"></i> Dashboard
+        </button>
+      </li>
+      <li class="nav-item">
+        <button data-tab="skill-matrix">
+          <i class="fa-solid fa-sliders"></i> Skill Matrix
+        </button>
+      </li>
+      <li class="nav-item">
+        <button data-tab="roadmap">
+          <i class="fa-solid fa-route"></i> Learning Roadmap
+        </button>
+      </li>
+      <li class="nav-item">
+        <button data-tab="market-insights">
+          <i class="fa-solid fa-briefcase"></i> Market Insights
+        </button>
+      </li>
+      <li class="nav-item">
+        <button data-tab="ai-advisor">
+          <i class="fa-solid fa-robot"></i> SkillBot AI
+        </button>
+      </li>
+    </ul>
+
+    <!-- Quick Action Controls -->
+    <div class="nav-actions">
+      <!-- 1-Click Demo Profiles -->
+      <select id="presetSelect" class="preset-select" title="Load Preset Profile">
+        <option value="preset_ai_sophomore">⚡ Demo: Alex (AI Sophomore)</option>
+        <option value="preset_web_self_taught">⚡ Demo: Maya (Full Stack)</option>
+        <option value="preset_cyber_junior">⚡ Demo: Jordan (Cybersecurity)</option>
+      </select>
+
+      <button id="exportBtn" class="btn btn-secondary" title="Export PDF or Print Plan">
+        <i class="fa-solid fa-file-pdf"></i> Export PDF
+      </button>
+      <button id="resetBtn" class="btn btn-secondary" title="Reset all data">
+        <i class="fa-solid fa-rotate-left"></i> Reset
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Profile & Readiness Header Banner -->
+    <section class="glass-card profile-banner">
+      <div class="profile-details">
+        <div class="profile-avatar">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </div>
+        <div class="profile-info">
+          <h2 id="displayName">Alex Chen</h2>
+          <div class="profile-meta">
+            <span><i class="fa-solid fa-bullseye" style="color: var(--primary);"></i> Target: <strong id="displayRole" style="color: var(--text-main);">AI & ML Engineer</strong></span>
+            <span class="meta-badge" id="displayHours">15 hrs/week</span>
+            <span class="meta-badge" id="readinessLevelLabel">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Edit Profile Controls -->
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+        <div>
+          <label style="font-size: 0.75rem; color: var(--text-muted); display: block;">Student Name</label>
+          <input type="text" id="studentNameInput" class="preset-select" style="width: 140px;" value="Alex Chen">
+        </div>
+        <div>
+          <label style="font-size: 0.75rem; color: var(--text-muted); display: block;">Target Role</label>
+          <select id="targetRoleSelect" class="preset-select">
+            <option value="ai_ml">AI & Machine Learning Engineer</option>
+            <option value="fullstack">Full Stack Web Developer</option>
+            <option value="data_science">Data Scientist & Analyst</option>
+            <option value="cybersecurity">Cybersecurity Specialist</option>
+            <option value="cloud_devops">Cloud & DevOps Engineer</option>
+            <option value="ui_ux">UI/UX Product Designer</option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size: 0.75rem; color: var(--text-muted); display: block;">Weekly Effort</label>
+          <select id="weeklyHoursInput" class="preset-select">
+            <option value="10">10 Hours / Week</option>
+            <option value="15" selected>15 Hours / Week</option>
+            <option value="20">20 Hours / Week</option>
+            <option value="30">30 Hours / Week</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Match Score Circular Gauge -->
+      <div class="match-score-card">
+        <div class="gauge-circle">
+          <svg viewBox="0 0 80 80">
+            <circle class="gauge-bg" cx="40" cy="40" r="35"></circle>
+            <circle class="gauge-progress" id="gaugeCircleProgress" cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="gauge-text" id="gaugeScoreText">68%</div>
+        </div>
+        <div class="score-meta">
+          <label>Career Readiness</label>
+          <div style="color: var(--primary);">Role Match</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 1: DASHBOARD OVERVIEW -->
+    <section id="dashboard" class="tab-content active">
+      <div class="dashboard-grid">
+        <!-- Radar Analytics Card -->
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-title">
+              <i class="fa-solid fa-chart-radar"></i> Skill Proficiency Matrix (Radar Chart)
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); display: flex; gap: 1rem;">
+              <span><i class="fa-solid fa-circle" style="color: var(--primary);"></i> Student Current</span>
+              <span><i class="fa-solid fa-circle" style="color: var(--cyan-gradient);"></i> Target Benchmark</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              <canvas id="radarChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Priority Skill Gaps Card -->
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-title">
+              <i class="fa-solid fa-triangle-exclamation"></i> Identified Priority Skill Gaps
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Sorted by Urgency</span>
+          </div>
+          <div class="card-body">
+            <div class="gap-list" id="dashboardGapList">
+              <!-- Rendered via App.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: INTERACTIVE SKILL MATRIX -->
+    <section id="skill-matrix" class="tab-content">
+      <div class="glass-card card-body" style="margin-bottom: 1.5rem;">
+        <h3 class="card-title" style="margin-bottom: 0.5rem;">
+          <i class="fa-solid fa-sliders"></i> Self-Assessment & Skill Rating Matrix
+        </h3>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Adjust your current skill proficiency sliders below to instantly recalculate your career readiness score and adapt your personalized learning roadmap.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="skills-filter-bar">
+        <button class="filter-chip active" data-filter="all">All Skills</button>
+        <button class="filter-chip" data-filter="core">Core Technical</button>
+        <button class="filter-chip" data-filter="tools">Tools & Frameworks</button>
+        <button class="filter-chip" data-filter="soft">Soft Skills & Fundamentals</button>
+      </div>
+
+      <!-- Matrix Grid -->
+      <div class="skill-matrix-grid" id="skillMatrixGrid">
+        <!-- Rendered via App.js -->
+      </div>
+    </section>
+
+    <!-- TAB 3: PERSONALIZED LEARNING ROADMAP -->
+    <section id="roadmap" class="tab-content">
+      <div class="glass-card card-body" style="margin-bottom: 1.5rem;">
+        <h3 class="card-title" style="margin-bottom: 0.5rem;">
+          <i class="fa-solid fa-route"></i> Personalized Career Learning Pathway
+        </h3>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Sequential milestone roadmap tailored to your specific skill gaps and target career path. Check off tasks as you complete courses and projects.
+        </p>
+      </div>
+
+      <!-- Roadmap Timeline Container -->
+      <div class="roadmap-phases" id="roadmapPhasesContainer">
+        <!-- Rendered via App.js -->
+      </div>
+    </section>
+
+    <!-- TAB 4: CAREER MARKET INSIGHTS -->
+    <section id="market-insights" class="tab-content">
+      <div class="glass-card card-body" style="margin-bottom: 1.5rem;">
+        <h3 class="card-title" style="margin-bottom: 0.5rem;">
+          <i class="fa-solid fa-chart-line"></i> Industry Demand & Salary Analytics
+        </h3>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Real-time market insights, salary spectrums, and top certification requirements for your target career track.
+        </p>
+      </div>
+
+      <div id="marketInsightsContainer">
+        <!-- Rendered via App.js -->
+      </div>
+    </section>
+
+    <!-- TAB 5: AI SKILLBOT ADVISOR -->
+    <section id="ai-advisor" class="tab-content">
+      <div class="chat-wrapper">
+        <div class="chat-header">
+          <div class="bot-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <div style="font-weight: 700;">SkillBot AI Advisor</div>
+            <div style="font-size: 0.775rem; color: var(--success); display: flex; align-items: center; gap: 4px;">
+              <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Active & Ready to Assist
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="message-bubble bot-message">
+            👋 Hello! I'm <strong>SkillBot</strong>, your intelligent career & learning advisor. Ask me anything about your skill gaps, course recommendations, or interview prep strategies!
+          </div>
+        </div>
+
+        <!-- Quick Prompts -->
+        <div class="quick-prompts">
+          <button class="prompt-btn">💡 What skills should I learn first?</button>
+          <button class="prompt-btn">🏆 Top certifications for my role?</button>
+          <button class="prompt-btn">⏱️ How long will it take to be job-ready?</button>
+          <button class="prompt-btn">🎯 Interview prep tips</button>
+        </div>
+
+        <div class="chat-input-bar">
+          <input type="text" id="chatInput" placeholder="Ask SkillBot a question about your career roadmap...">
+          <button id="chatSendBtn" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Send
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Smart Student Skill Analysis and Career Learning Planner. Built with HTML, CSS, JavaScript & Canvas.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
