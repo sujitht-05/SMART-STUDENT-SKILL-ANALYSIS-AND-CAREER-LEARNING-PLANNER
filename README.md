@@ -1,5 +1,5 @@
 #
-Smart Student Skill Analysis and Career Learning Planner
+Smart-Student-Skill-Analysis-and-Career- Learning-Planner
 
 📌 Project Overview
 
