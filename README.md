@@ -124,35 +124,6 @@ Skill Gap Detection
           ↓
 Learning Resource Recommendation
 
-📂 Suggested Project Structure
-
-smart-student-skill-analysis/
-│
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── assets/
-│
-├── backend/
-│   ├── app.py
-│   ├── routes/
-│   ├── models/
-│   └── services/
-│
-├── ml/
-│   ├── dataset/
-│   ├── preprocessing/
-│   ├── training/
-│   └── recommendation_model.py
-│
-├── database/
-│   └── schema.sql
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-
 🚀 Installation
 
 1. Clone the Repository
