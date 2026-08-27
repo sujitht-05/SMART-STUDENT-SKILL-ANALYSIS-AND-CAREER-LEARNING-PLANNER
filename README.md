@@ -203,11 +203,17 @@ Skill Gaps:
 The system can then generate a learning roadmap:
 
 Phase 1 → Advanced Python
+
 Phase 2 → Statistics & Probability
+
 Phase 3 → SQL
+
 Phase 4 → Data Visualization
+
 Phase 5 → Machine Learning
+
 Phase 6 → Projects & Portfolio
+
 Phase 7 → Interview Preparation
 
 🔐 Privacy and Security
