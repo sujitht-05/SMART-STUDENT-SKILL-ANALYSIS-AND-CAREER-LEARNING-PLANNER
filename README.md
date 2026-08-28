@@ -233,23 +233,6 @@ Recommended practices include:
 - Protection of personal information
 - Avoiding unnecessary collection of sensitive student data
 
-🔮 Future Enhancements
-
-Future versions of the project can include:
-
-- AI-powered career counseling chatbot
-- Resume analysis
-- Job-market skill analysis
-- Real-time job and internship recommendations
-- Integration with online learning platforms
-- Skill certification tracking
-- Personalized interview preparation
-- Portfolio recommendations
-- Advanced AI-based career prediction
-- Mobile application
-- Multi-language support
-- Analytics dashboard for educators and institutions
-
 🎓 Benefits
 
 For Students
