@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-09-03",
+  "categories": [
+    "Core Engineering",
+    "Frameworks & Libraries",
+    "Cloud & DevOps",
+    "Security & Compliance",
+    "Data & AI",
+    "Design & UX",
+    "Soft Skills"
+  ],
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python Programming",
+      "category": "Core Engineering",
+      "difficulty": "Beginner to Advanced",
+      "trendingScore": 98,
+      "prerequisites": [],
+      "keyTopics": ["NumPy", "Pandas", "OOP", "AsyncIO", "Data Structures"],
+      "officialDocs": "https://docs.python.org/3/"
+    },
+    {
+      "id": "js_ts",
+      "name": "JavaScript & TypeScript",
+      "category": "Core Engineering",
+      "difficulty": "Intermediate",
+      "trendingScore": 95,
+      "prerequisites": ["HTML5/CSS3"],
+      "keyTopics": ["ES6+", "Async/Await", "Type Annotations", "DOM API", "Generics"],
+      "officialDocs": "https://www.typescriptlang.org/docs/"
+    },
+    {
+      "id": "react_next",
+      "name": "React.js & Next.js",
+      "category": "Frameworks & Libraries",
+      "difficulty": "Intermediate",
+      "trendingScore": 94,
+      "prerequisites": ["js_ts"],
+      "keyTopics": ["Hooks", "SSR/SSG", "App Router", "State Management", "Server Components"],
+      "officialDocs": "https://nextjs.org/docs"
+    },
+    {
+      "id": "ml_algo",
+      "name": "Machine Learning Algorithms",
+      "category": "Data & AI",
+      "difficulty": "Advanced",
+      "trendingScore": 96,
+      "prerequisites": ["python", "math_stat"],
+      "keyTopics": ["Regression", "Random Forests", "XGBoost", "SVM", "Model Evaluation"],
+      "officialDocs": "https://scikit-learn.org/stable/"
+    },
+    {
+      "id": "gen_ai",
+      "name": "LLMs & Generative AI",
+      "category": "Data & AI",
+      "difficulty": "Advanced",
+      "trendingScore": 99,
+      "prerequisites": ["python", "deep_learning"],
+      "keyTopics": ["LangChain", "RAG Architecture", "Prompt Engineering", "Vector DBs (Chroma/Pinecone)"],
+      "officialDocs": "https://python.langchain.com/docs/"
+    },
+    {
+      "id": "docker_cloud",
+      "name": "Docker & Containerization",
+      "category": "Cloud & DevOps",
+      "difficulty": "Intermediate",
+      "trendingScore": 91,
+      "prerequisites": ["linux_sys"],
+      "keyTopics": ["Dockerfile", "Docker Compose", "Multi-stage Builds", "Container Security"],
+      "officialDocs": "https://docs.docker.com/"
+    },
+    {
+      "id": "networking",
+      "name": "Network Protocols & Security",
+      "category": "Security & Compliance",
+      "difficulty": "Intermediate",
+      "trendingScore": 88,
+      "prerequisites": [],
+      "keyTopics": ["TCP/IP", "DNS", "Wireshark", "Firewalls", "VPN/IPsec"],
+      "officialDocs": "https://www.wireshark.org/docs/"
+    },
+    {
+      "id": "figma",
+      "name": "Figma & UI Prototyping",
+      "category": "Design & UX",
+      "difficulty": "Beginner to Intermediate",
+      "trendingScore": 90,
+      "prerequisites": [],
+      "keyTopics": ["Auto-Layout", "Design Systems", "Component Variants", "Interactive Prototypes"],
+      "officialDocs": "https://help.figma.com/"
+    }
+  ]
+}

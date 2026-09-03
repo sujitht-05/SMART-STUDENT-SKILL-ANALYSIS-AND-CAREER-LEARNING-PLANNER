@@ -1,0 +1,62 @@
+{
+  "frameworkName": "Smart Student Career Readiness Matrix",
+  "version": "2.0",
+  "readinessTiers": [
+    {
+      "tier": "Job Ready",
+      "minScore": 80,
+      "maxScore": 100,
+      "badgeColor": "#10b981",
+      "description": "Student possesses strong core technical competencies, verified portfolio projects, and meets entry to mid-level industry hiring standards.",
+      "recommendedAction": "Begin actively applying for full-time job openings, mock technical interviews, and networking on LinkedIn."
+    },
+    {
+      "tier": "Intermediate",
+      "minScore": 55,
+      "maxScore": 79,
+      "badgeColor": "#6366f1",
+      "description": "Solid foundational knowledge established. Needs 1-2 major capstone projects and deeper framework specialization to bridge the gap.",
+      "recommendedAction": "Focus on Phase 2 & Phase 3 roadmap tasks, complete 1 full-stack project, and pursue 1 industry certification."
+    },
+    {
+      "tier": "Foundational",
+      "minScore": 0,
+      "maxScore": 54,
+      "badgeColor": "#f59e0b",
+      "description": "Early stage learning. High skill gap present in core algorithms, tools, or hands-on practice.",
+      "recommendedAction": "Dedicate 15+ hours per week to Phase 1 foundational courses, coding exercises, and basic Git version control."
+    }
+  ],
+  "scoringWeights": {
+    "coreTechnicalSkills": 0.50,
+    "toolsAndFrameworks": 0.25,
+    "portfolioProjects": 0.15,
+    "softSkillsAndCommunication": 0.10
+  },
+  "interviewReadinessChecklist": [
+    {
+      "id": "chk_resume",
+      "title": "ATS-Optimized Resume",
+      "category": "Career Assets",
+      "description": "Quantified achievement bullets (e.g., 'Optimized API response time by 40%') tailored to target job title."
+    },
+    {
+      "id": "chk_github",
+      "title": "Public GitHub Portfolio",
+      "category": "Career Assets",
+      "description": "At least 2 well-documented repositories with clean README files, architecture diagrams, and live demo links."
+    },
+    {
+      "id": "chk_leetcode",
+      "title": "Data Structures & Algorithmic Problem Solving",
+      "category": "Technical Interview",
+      "description": "Ability to solve Medium difficulty LeetCode / HackerRank problems in arrays, trees, dynamic programming, and graphs."
+    },
+    {
+      "id": "chk_star",
+      "title": "Behavioral STAR Method Preparation",
+      "category": "Soft Skills",
+      "description": "Prepared responses for Situation, Task, Action, and Result covering teamwork, conflict resolution, and technical challenges."
+    }
+  ]
+}
