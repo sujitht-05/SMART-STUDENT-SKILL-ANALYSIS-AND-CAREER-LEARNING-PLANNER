@@ -144,7 +144,7 @@ Career / Job Opportunities
 
 ---
 
-📁 PROJECT STRUCTURE:
+📁 PROJECT STRUCTURE: 
 
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
@@ -155,7 +155,10 @@ SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
 ├── skill_analysis.js
 ├── skill_match.js
+├── skill_validation.js
 ├── job_matcher.js
+├── adaptive_learning.js
+├── recommendation_explanation.js
 │
 ├── career_readiness.json
 ├── industry_skills.json
