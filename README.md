@@ -148,10 +148,10 @@ Career / Job Opportunities
 
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
-├── Frontend
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
+├── Frontend.           #
+│   ├── index.html.     #
+│   ├── styles.css.     #
+│   └── app.js.         #
 │
 ├── Data
 │   ├── data.js
