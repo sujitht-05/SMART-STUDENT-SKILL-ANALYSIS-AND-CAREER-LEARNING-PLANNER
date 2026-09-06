@@ -144,6 +144,8 @@ Career / Job Opportunities
 
 ---
 
+📁 PROJECT STRUCTURE:
+
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
 ├── Frontend
