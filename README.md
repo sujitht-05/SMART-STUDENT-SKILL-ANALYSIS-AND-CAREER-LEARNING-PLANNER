@@ -27,7 +27,7 @@ Traditional career guidance may provide general suggestions, but students need m
 
 ---
 
-💡 PROPOSED SOLUTION:
+# 💡 PROPOSED SOLUTION:
 
 This project provides a smart web-based platform that analyses a student's profile and compares it with career and industry skill requirements.
 
@@ -39,7 +39,7 @@ This helps students make more informed career and learning decisions.
 
 ---
 
-✨ KEY FEATURES:
+# ✨ KEY FEATURES:
 
 👤 1. Student Skill Analysis
 
@@ -112,7 +112,7 @@ Career / Job Opportunities
 
 ---
 
-🏗️ SYSTEM WORKFLOW:
+# 🏗️ SYSTEM WORKFLOW:
 
               Student Profile
                     │
@@ -172,7 +172,7 @@ SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 
 ---
 
-🛠️ TECHNOLOGIES USED:
+# 🛠️ TECHNOLOGIES USED:
 
 Frontend
 
@@ -187,7 +187,7 @@ Data
 
 ---
 
-🔄 How The System Works:
+# 🔄 How The System Works:
 
 Step 1 — Enter Student Information
 
@@ -219,7 +219,7 @@ The student can use the identified skill gaps to plan their learning and develop
 
 ---
 
-🚀 How To Run The Project:
+# 🚀 How To Run The Project:
 
 Method 1 — Open Directly
 
@@ -237,7 +237,7 @@ Method 2 — Using VS Code
 
 ---
 
-🎯 TARGET USERS:
+# 🎯 TARGET USERS:
 
 This project is primarily designed for:
 
@@ -250,7 +250,7 @@ This project is primarily designed for:
 
 ---
 
-✅ BENEFITS:
+# ✅ BENEFITS:
 
 - Helps students understand their current skills.
 - Identifies important skill gaps.
