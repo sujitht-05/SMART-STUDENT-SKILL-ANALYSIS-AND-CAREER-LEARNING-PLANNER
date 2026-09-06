@@ -144,27 +144,29 @@ Career / Job Opportunities
 
 ---
 
-📁 PROJECT STRUCTURE: 
-
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
-├── index.html
-├── styles.css
-├── app.js
-├── data.js
+├── Frontend
+│   ├── index.html
+│   ├── styles.css
+│   └── app.js
 │
-├── skill_analysis.js
-├── skill_match.js
-├── skill_validation.js
-├── job_matcher.js
-├── adaptive_learning.js
-├── recommendation_explanation.js
+├── Data
+│   ├── data.js
+│   ├── career_readiness.json
+│   ├── industry_skills.json
+│   └── job_data.json
 │
-├── career_readiness.json
-├── industry_skills.json
-├── job_data.json
+├── Skill & Career Logic
+│   ├── skill_analysis.js
+│   ├── skill_match.js
+│   ├── skill_validation.js
+│   ├── job_matcher.js
+│   ├── adaptive_learning.js
+│   └── recommendation_explanation.js
 │
-└── README.md
+└── Documentation
+    └── README.md
 
 ---
 
