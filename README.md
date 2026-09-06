@@ -2,7 +2,7 @@
 
 ---
 
-# 📌 PROJECT OVERVIEW: 
+#📌 PROJECT OVERVIEW: 
 
 The Smart Student Skill Analysis and Career Learning Planner is a web-based career and learning guidance system designed to help students understand their current skills, identify skill gaps, explore suitable career opportunities, and plan the skills they need to develop.
 
