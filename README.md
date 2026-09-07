@@ -41,7 +41,7 @@ This helps students make more informed career and learning decisions.
 
 # ✨ KEY FEATURES:
 
-## 👤 1. Student Skill Analysis
+# 👤 1. Student Skill Analysis
 
 Students can provide information about their skills and interests.
 
