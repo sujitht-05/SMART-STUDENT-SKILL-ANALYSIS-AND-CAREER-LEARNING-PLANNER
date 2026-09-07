@@ -148,18 +148,18 @@ Career / Job Opportunities
 
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
-├── Frontend
+├── Frontend/
 │   ├── index.html
 │   ├── styles.css
 │   └── app.js
 │
-├── Data
+├── Data/
 │   ├── data.js
 │   ├── career_readiness.json
 │   ├── industry_skills.json
 │   └── job_data.json
 │
-├── Skill & Career Logic
+├── Skill & Career Logic/
 │   ├── skill_analysis.js
 │   ├── skill_match.js
 │   ├── skill_validation.js
@@ -167,7 +167,7 @@ SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │   ├── adaptive_learning.js
 │   └── recommendation_explanation.js
 │
-└── Documentation
+└── Documentation/
     └── README.md
 
 ---
