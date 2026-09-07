@@ -189,31 +189,31 @@ Data
 
 # 🔄 How The System Works:
 
-Step 1 — Enter Student Information
+## Step 1 — Enter Student Information
 
 The student provides relevant information about their skills, interests, and career preferences.
 
-Step 2 — Analyse Skills
+## Step 2 — Analyse Skills
 
 The system analyses the student's existing skill profile.
 
-Step 3 — Match Skills
+## Step 3 — Match Skills
 
 Student skills are compared with the required skills for different career and job opportunities.
 
-Step 4 — Identify Skill Gaps
+## Step 4 — Identify Skill Gaps
 
 The system identifies skills that are missing or require improvement.
 
-Step 5 — Career & Job Matching
+## Step 5 — Career & Job Matching
 
 Suitable career paths and relevant job opportunities are identified based on the available data.
 
-Step 6 — Career Readiness
+## Step 6 — Career Readiness
 
 The system provides an indication of the student's readiness and areas that require further development.
 
-Step 7 — Learning Planning
+## Step 7 — Learning Planning
 
 The student can use the identified skill gaps to plan their learning and development.
 
@@ -221,13 +221,13 @@ The student can use the identified skill gaps to plan their learning and develop
 
 # 🚀 How To Run The Project:
 
-Method 1 — Open Directly
+## Method 1 — Open Directly
 
 1. Clone or download the repository.
 2. Open the project folder.
 3. Open "index.html" in a web browser.
 
-Method 2 — Using VS Code
+## Method 2 — Using VS Code
 
 1. Open the project folder in Visual Studio Code.
 2. Install the Live Server extension.
