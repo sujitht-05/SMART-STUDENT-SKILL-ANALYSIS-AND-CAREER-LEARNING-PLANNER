@@ -41,7 +41,7 @@ This helps students make more informed career and learning decisions.
 
 # ✨ KEY FEATURES:
 
-👤 1. Student Skill Analysis
+## 👤 1. Student Skill Analysis
 
 Students can provide information about their skills and interests.
 
@@ -49,7 +49,7 @@ The system analyses the available information to understand the student's curren
 
 ---
 
-🔍 2. Skill Gap Analysis
+## 🔍 2. Skill Gap Analysis
 
 The system compares the student's current skills with the skills required for a selected career or industry.
 
@@ -62,7 +62,7 @@ It helps identify:
 
 ---
 
-🎯 3. Career Matching
+## 🎯 3. Career Matching
 
 The system analyses the student's skill profile and provides suitable career options based on the available career and industry skill data.
 
@@ -70,7 +70,7 @@ This helps students explore careers that align with their current abilities and 
 
 ---
 
-💼 4. Job Matching
+## 💼 4. Job Matching
 
 The project includes a job-matching component that compares student skills with available job requirements.
 
@@ -78,7 +78,7 @@ It helps students understand which job opportunities are more relevant to their 
 
 ---
 
-📊 5. Career Readiness Analysis
+## 📊 5. Career Readiness Analysis
 
 The system provides career-readiness information to help students understand their preparation level for their selected career path.
 
@@ -86,7 +86,7 @@ It highlights areas where additional skill development may be required.
 
 ---
 
-📚 6. LEARNING PLANNER:
+## 📚 6. LEARNING PLANNER:
 
 Based on identified skill gaps, the system helps students understand what skills they need to learn or improve.
 
@@ -94,7 +94,7 @@ The learning plan provides a structured direction for skill development.
 
 ---
 
-🧭 7. CAREER ROADMAP:
+## 🧭 7. CAREER ROADMAP:
 
 The system helps students follow a step-by-step path:
 
