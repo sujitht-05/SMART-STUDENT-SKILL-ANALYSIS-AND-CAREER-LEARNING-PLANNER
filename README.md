@@ -144,31 +144,60 @@ Career / Job Opportunities
 
 ---
 
-# 📁 PROJECT STRUCTURE:
 
+
+
+                          │
+                          ▼
+                  Adaptive Learning
+                          │
+                          ▼
+                  Student Dashboard
+```
+
+---
+
+# 🧩 Main Modules
+
+| Module                     | Purpose                                         |
+| -------------------------- | ----------------------------------------------- |
+| Skill Analysis             | Analyses the student's current skills           |
+| Skill Validation           | Validates entered skills                        |
+| Skill Matching             | Matches student skills with required skills     |
+| Industry Skill Analysis    | Compares skills with industry requirements      |
+| Job Matcher                | Matches students with suitable job requirements |
+| Career Readiness           | Evaluates career preparedness                   |
+| Recommendation Explanation | Explains why recommendations are generated      |
+| Adaptive Learning          | Provides personalized learning guidance         |
+| Dashboard                  | Presents analysis and recommendations           |
+
+---
+
+# 📁 Project Structure
+
+The current repository contains the following main files:
+
+```text
 SMART-STUDENT-SKILL-ANALYSIS-AND-CAREER-LEARNING-PLANNER/
 │
-├── Frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
+├── index.html
+├── styles.css
+├── app.js
+├── data.js
 │
-├── Data/
-│   ├── data.js
-│   ├── career_readiness.json
-│   ├── industry_skills.json
-│   └── job_data.json
+├── skill_analysis.js
+├── skill_match.js
+├── skill_validation.js
+├── job_matcher.js
+├── adaptive_learning.js
+├── recommendation_explanation.js
 │
-├── Skill & Career Logic/
-│   ├── skill_analysis.js
-│   ├── skill_match.js
-│   ├── skill_validation.js
-│   ├── job_matcher.js
-│   ├── adaptive_learning.js
-│   └── recommendation_explanation.js
+├── career_readiness.json
+├── industry_skills.json
+├── job_data.json
 │
-└── Documentation/
-    └── README.md
+└── README.md
+```
 
 ---
 
