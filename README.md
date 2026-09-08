@@ -144,19 +144,6 @@ Career / Job Opportunities
 
 ---
 
-
-
-
-                          │
-                          ▼
-                  Adaptive Learning
-                          │
-                          ▼
-                  Student Dashboard
-```
-
----
-
 # 🧩 Main Modules
 
 | Module                     | Purpose                                         |
