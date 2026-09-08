@@ -98,17 +98,7 @@ The learning plan provides a structured direction for skill development.
 
 The system helps students follow a step-by-step path:
 
-Current Skills
-      ↓
-Skill Gap Identification
-      ↓
-Required Skills
-      ↓
-Learning & Skill Development
-      ↓
-Career Readiness
-      ↓
-Career / Job Opportunities
+Current Skills → Skill Gap Identification → Required Industry Skills → Learning & Skill Development → Career Readiness Assessment → Career / Job Opportunities
 
 ---
 
